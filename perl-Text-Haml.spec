@@ -18,6 +18,7 @@ BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(File::Basename)
 BuildRequires: perl(File::Spec)
 BuildRequires: perl(IO::File)
+BuildRequires: perl(Module::Build)
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(URI::Escape)
 BuildArch:  noarch
