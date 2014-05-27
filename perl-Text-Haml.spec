@@ -3,9 +3,10 @@
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    2
+Release:    3
 
 Summary:    Haml Perl implementation
+
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
@@ -43,7 +44,7 @@ perl Build.PL --installdirs=vendor
 ./Build test
 
 %install
-./Build install --destdir=%buildroot
+./Build install --destdir=%{buildroot}
 rm -f %{buildroot}/%{perl_vendorlib}/Text/README.pod
 
 %files
