@@ -6,6 +6,7 @@ Version:    %perl_convert_version %{upstream_version}
 Release:    1
 
 Summary:    Haml Perl implementation
+
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
@@ -18,6 +19,7 @@ BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(File::Basename)
 BuildRequires: perl(File::Spec)
 BuildRequires: perl(IO::File)
+BuildRequires: perl(Module::Build)
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(URI::Escape)
 BuildArch:  noarch
@@ -42,7 +44,7 @@ perl Build.PL --installdirs=vendor
 ./Build test
 
 %install
-./Build install --destdir=%buildroot
+./Build install --destdir=%{buildroot}
 rm -f %{buildroot}/%{perl_vendorlib}/Text/README.pod
 
 %files
