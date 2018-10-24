@@ -24,6 +24,7 @@ BuildRequires: perl(IO::File)
 BuildRequires: perl(Module::Build)
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(URI::Escape)
+BuildRequires: perl(Test::More)
 BuildArch:  noarch
 
 %description
