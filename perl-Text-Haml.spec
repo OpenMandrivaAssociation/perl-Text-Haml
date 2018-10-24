@@ -1,9 +1,9 @@
 %define upstream_name    Text-Haml
-%define upstream_version 0.990115
+%define upstream_version 0.990116
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    2
+Release:    1
 
 Summary:    Haml Perl implementation
 
