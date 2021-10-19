@@ -37,7 +37,7 @@ http://github.com/norman/haml-spec and supports only cross-language Haml
 features. Do not expect Ruby specific things to work.
 
 %prep
-%setup -qn %{upstream_name}-%{upstream_version}
+%autosetup -p1 -n %{upstream_name}-%{upstream_version}
 
 %build
 perl Build.PL --installdirs=vendor
@@ -52,5 +52,5 @@ rm -f %{buildroot}/%{perl_vendorlib}/Text/README.pod
 
 %files
 %doc META.json META.yml MYMETA.yml
-%{_mandir}/man3/*
+%doc %{_mandir}/man3/*
 %{perl_vendorlib}/*
