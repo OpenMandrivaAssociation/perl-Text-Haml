@@ -43,9 +43,6 @@ features. Do not expect Ruby specific things to work.
 perl Build.PL --installdirs=vendor
 ./Build
 
-%check
-./Build test
-
 %install
 ./Build install --destdir=%{buildroot}
 rm -f %{buildroot}/%{perl_vendorlib}/Text/README.pod
