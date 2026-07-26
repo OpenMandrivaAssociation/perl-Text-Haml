@@ -1,16 +1,14 @@
 %define upstream_name    Text-Haml
-%define upstream_version 0.990116
-
 Name:       perl-%{upstream_name}
-Version:    %perl_convert_version %{upstream_version}
-Release:    2
+Version:    0.990116
+Release:    3
 
 Summary:    Haml Perl implementation
 
 License:    GPL+ or Artistic
 Group:      Development/Perl
-Url:        https://search.cpan.org/dist/%{upstream_name}
-Source0:    http://www.cpan.org/modules/by-module/Text/%{upstream_name}-%{upstream_version}.tar.gz
+Url:        https://metacpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Text/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires: perl(CPAN::Meta)
 BuildRequires: perl(Carp)
@@ -37,7 +35,7 @@ http://github.com/norman/haml-spec and supports only cross-language Haml
 features. Do not expect Ruby specific things to work.
 
 %prep
-%autosetup -p1 -n %{upstream_name}-%{upstream_version}
+%autosetup -p1 -n %{upstream_name}-%{version}
 
 %build
 perl Build.PL --installdirs=vendor
