@@ -1,7 +1,7 @@
 %define upstream_name    Text-Haml
 Name:       perl-%{upstream_name}
-Version:    0.990116
-Release:    3
+Version:    0.990118
+Release:    1
 
 Summary:    Haml Perl implementation
 
@@ -35,7 +35,7 @@ http://github.com/norman/haml-spec and supports only cross-language Haml
 features. Do not expect Ruby specific things to work.
 
 %prep
-%autosetup -p1 -n %{upstream_name}-%{version}
+%autosetup -p1 -n Text-Haml-0.990118
 
 %build
 perl Build.PL --installdirs=vendor
