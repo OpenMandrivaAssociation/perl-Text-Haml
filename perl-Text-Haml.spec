@@ -23,6 +23,7 @@ BuildRequires: perl(Module::Build)
 BuildRequires: perl(Scalar::Util)
 BuildRequires: perl(URI::Escape)
 BuildRequires: perl(Test::More)
+BuildRequires:	perl(Module::Build::Tiny)
 BuildArch:  noarch
 
 %description
